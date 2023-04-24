@@ -40,4 +40,4 @@ You simply include password-protector.min.js at the end of your login form and a
 - **password-protector.js** uses `PBKDF2` to create the client side hash of the original password.
 - The user identifier field given in the `data-salt-field` attribute is used as salt. Using the user identifier as salt has the advantage that the salt does not need to be stored on the client side and is unique per user.
   - If the user can **change his identifier** (e.g. email address), you must **update the password hash**!
-  - The login form should always take the same user identifier (e.g. email address only, not email or username)
+  - The login form must always take the same user identifier (e.g. email address only, not email or username)
